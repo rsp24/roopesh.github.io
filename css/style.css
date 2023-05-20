@@ -1,0 +1,14 @@
+.owl-carousel {
+    display: block;
+}
+
+.owl-item {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    z-index: 0;
+    overflow: hidden;
+}
