@@ -1,14 +1,127 @@
-.owl-carousel {
-    display: block;
+body{
+    font-family: 'Lato',sans-serif;
 }
 
-.owl-item {
+/* Header
+========================
+*/
+
+.main-logo img{
+    max-width: 12vw;
+}
+
+.contact-menu ul, .main-menu ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.main-menu li, .contact-menu li{
+    margin: 0% 2%;
+    font-size: 14px;
+    color: white;
+}
+
+.main-menu li a, .contact-menu li a{
+    color : white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-menu li a:active{
+    border-bottom: 1px solid #d0b00e;
+}
+
+.main-menu li a:hover, .contact-menu li a:hover, .contact-menu li:hover{
+    color: #d0b00e;
+}
+
+.ph-no{
+    color:#d0b00e !important;
+}
+
+#contact-bar, #cart-button, #search-bt{
+    cursor: pointer;
+}
+
+.head-section{
     position: relative;
 }
 
-.slider {
-    position: relative;
-    width: 100vw;
-    z-index: 0;
+header{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.slider-banner{
+   height: 500px;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.slider-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.693);
+    z-index: 1;
+}
+
+.slider-content{
+    position: absolute;
+    z-index: 2;
+}
+
+.slider-banner img{
+    object-position: cover;
+    width: 100%;
+}
+
+.main-head{
+    font-weight: 900;
+    font-size: min(32px,5.6vw);
+    color: white;
+}
+
+.main-subhead{
+    font-size: 14px;
+    color: white;
+    padding: 2% 0%;
+}
+
+.main-button button{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 2%;
+}
+
+.main-button a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.section-two-card-main-image{
+    width: 300px;
     overflow: hidden;
+    height: 300px;
+}
+
+.section-two-card-main-image img{
+    object-fit:contain;
+}
+
+.section-two-card-1-subimg img{
+    max-width: 16vw;
 }
