@@ -4,92 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/js/jquery-3.7.0.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Kitchor</title>
 </head>
 <body>
-    <div class="head-section">
-        <header class="row mx-0">
-            <div class="main-logo col-2 col-lg-2 text-center py-3 my-auto"><img src="images/main-logo.png" alt="kitchor"></div>
-            <div class="main-menu col-7 my-auto">
-                <ul class=" ms-3">
+    <div class="header-banner">
+        <header>
+            <div class="main-logo">
+                <img src="images/main-logo.png" alt="Kitchen">
+            </div>
+            <div class="main-menu"> 
+                <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="/virtualtours.html">VIRTUAL TOURS</a></li>
-                    <li><a href="/projects.html">PROJECT</a></li>
-                    <li><a href="/pages.html">PAGES</a></li>
-                    <li><a href="/shop.html">SHOP</a></li>
-                    <li><a href="/blog.html">BLOG</a></li>
-                    <li><a href="/contact.html">CONTACT</a></li>
+                    <li><a href="tours.html">VIRTUAL TOURS</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="pages.html">PAGES</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <div class="contact-menu col-3 my-auto">
-                <ul class="ms-5">
-                    <li>Call us : <a href="tel:+08423456789" class="ph-no">084 234 56 789</a></li>
-                    <li id="search-bt"><i class="fa fa-search"></i></li>
-                    <li><a href="myaccount.html"><i class="fa fa-user"></i></a></li>
-                    <li><a id="cart-button"><i class="fa fa-basket-shopping"></i></a></li>
-                    <li id="contact-bar"><i class="fa fa-bars"></i></li>
+            <div class="contact-menu">
+                <ul>
+                    <li class="contact-number">Call us :<a href="tel:+08423456789" class="number"> 084 234 56 789</a></li>
+                    <li><i id="search-icon" class="fa fa-search"></i></li>
+                    <li><a href="account.html"><i class="fa fa-user"></i></a></li>
+                    <li><i id="cart-icon" class="fa fa-basket-shopping"></i></li>
+                    <li><i id="menu-bar" class="fa fa-bars"></i></li>
                 </ul>
             </div>
         </header>
-        <div class="slider-banner mx-0">
-            <img src="images/image15.jpg" alt="">
-            <div class="slider-content row text-center">
-                <div class="col-4 mx-auto main-head">Lorem ipsum dolor sit amet consectetur</div>
-                <div class="w-100"></div>
-                <div class="col-4 mx-auto main-subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
-                <div class="w-100"></div>
-                <div class="col-3 mx-auto main-button"><button class="button"><a href="showroom.html">VISIT SHOW ROOM <i class="fa fa-arrow-right"></i></a></button></div>
+        <div id="homeslider">
+            <div class="owl-carousel owl-theme">
+                <div class="slider-item">
+                    <img src="images/sliderimage.jpg" alt="slider-element-1">
+                    <div class="banner-content">
+                        <div class="slider-header">Make a kitargu kitchen part of family</div>
+                        <div class="slider-subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sed! Tempora explicabo harum aliquam dolorem.</div>
+                        <div class="slider-button"><button><a href="showroom.html">VISIT SHOW ROOM <i class="fa fa-arrow-right"></i></a></button></div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="images/sliderimage.jpg" alt="slider-element-2">
+                    <div class="banner-content">
+                        <div class="slider-header">Make a kitargu kitchen part of family</div>
+                        <div class="slider-subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sed! Tempora explicabo harum aliquam dolorem.</div>
+                        <div class="slider-button"><button><a href="showroom.html">VISIT SHOW ROOM <i class="fa fa-arrow-right"></i></a></button></div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="images/sliderimage.jpg" alt="slider-element-3">
+                    <div class="banner-content">
+                        <div class="slider-header">Make a kitargu kitchen part of family</div>
+                        <div class="slider-subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sed! Tempora explicabo harum aliquam dolorem.</div>
+                        <div class="slider-button"><button><a href="showroom.html">VISIT SHOW ROOM <i class="fa fa-arrow-right"></i></a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <form action="#">
+                <input type="text" id="search-bar">
+                <i type="submit" class="fa fa-search"></i>
+            </form>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="section-2-one"> 
+            <div class="section-2-card">
+                <div class="section-2-card-image"><img src="images/kitchen-1.jpg" alt=""></div>
+                <div class="section-2-card-logo"><img src="images/main-logo.png" alt=""></div>
+                <div class="section-2-card-body">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente aspernatur provident recusandae necessitatibus! Tempora debitis voluptas iste commodi natus?"</div>
+                <div class="section-2-card-author">Someone</div>
+                <div class="section-2-card-designation">Designer</div>
+            </div>
+            <div class="section-2-card">
+                <div class="section-2-card-small-head">ABOUT US</div>
+                <div class="section-2-card-head">Creative solutions by professional Designers</div>
+                <div class="section-2-card-body">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde consequatur dolore ab rerum quidem, dolores nostrum nulla itaque quisquam?"</div>
+                <div class="section-2-button"><button><a href="solutions.html">CONTINUE READING <i class="fa fa-arrow-right"></i></a> </button></div>
+                <div class="section-2-card-image"><img src="images/engineer-1.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="section-2-2">
+            <ul>
+                <li><div class="feature-head">25+</div><div class="feature-designation">Interior Design</div></li>
+                <li><div class="feature-head">25+</div><div class="feature-designation">Interior Design</div></li>
+                <li><div class="feature-head">25+</div><div class="feature-designation">Interior Design</div></li>
+                <li><div class="feature-head">25+</div><div class="feature-designation">Interior Design</div></li>
+            </ul>
+        </div>
+        <div class="section-2-3"><iframe width="650" height="320" src="https://www.youtube.com/embed/RnD8i47Ldig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+    <div class="section-3-container">
+        <div class="section-3">
+            <div class="section-3-1">
+                <div class="section-3-subhead">OUR SERVICES</div>
+                <div class="section-3-head">We provide more than just quality services</div>
+                <div class="section-3-button"><button><a href="services.html">READ MORE <i class="fa fa-arrow-right"></i></a></button></div>
+            </div>
+            <div class="section-3-2">
+                <div class="section-3-2-card">
+                    <div class="section-3-2-card-top">
+                        <div class="section-3-2-card-logo"><i class="fa fa-user"></i></div>
+                        <div class="section-3-2-card-head">Smart care</div>
+                    </div>
+                    <div class="section-3-2-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam optio a cumque possimus aliquam.</div>
+                </div>
+                <div class="section-3-2-card">
+                    <div class="section-3-2-card-top">
+                        <div class="section-3-2-card-logo"><i class="fa fa-user"></i></div>
+                        <div class="section-3-2-card-head">Smart care</div>
+                    </div>
+                    <div class="section-3-2-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam optio a cumque possimus aliquam.</div>
+                </div>
+                <div class="section-3-2-card">
+                    <div class="section-3-2-card-top">
+                        <div class="section-3-2-card-logo"><i class="fa fa-user"></i></div>
+                        <div class="section-3-2-card-head">Smart care</div>
+                    </div>
+                    <div class="section-3-2-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam optio a cumque possimus aliquam.</div>
+                </div>
+                <div class="section-3-2-card">
+                    <div class="section-3-2-card-top">
+                        <div class="section-3-2-card-logo"><i class="fa fa-user"></i></div>
+                        <div class="section-3-2-card-head">Smart care</div>
+                    </div>
+                    <div class="section-3-2-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam optio a cumque possimus aliquam.</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid section-two">
-        <div class="row col-6 mx-auto py-5">
-            <div class="col-6 section-two-card text-center">
-                <div class="col-12 section-two-card-main-image"><img src="images/image11.jpg" alt="kitchen"></div>
-                <div class="col-12 section-two-card-1-subimg py-3"><img src="images/main-logo.png" alt="Kitchor"></div>
-                <div class="col-12">
-                    <div class="section-two-about">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ipsa, beatae facere neque exercitationem unde dolorum at id eum nesciunt nobis, in odio qui fugiat."</div>
-                    <div class="section-two-author">Joshua Keith</div>
-                    <div class="section-two-author-des">Lead Design</div>
+    <div class="section-4">
+        <div class="section-4-subhead">HOW WE WORKS</div>
+        <div class="section-4-head">3 Easy steps to get Interior design</div>
+        <div class="section-4-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, cupiditate?</div>
+        <div class="section-4-content">
+            <div class="section-4-image"><img src="images/engineer.jpg" alt=""></div>
+            <div class="section-4-inner-content">
+                <div class="section-4-inner-card">
+                    <div class="section-4-inner-card-number">01</div>
+                    <div class="section-4-inner-card-head">We Visit You At Home</div>
+                    <a href="interiordesign.html" class="section-4-inner-card-link">READ MORE <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="section-4-inner-card">
+                    <div class="section-4-inner-card-number">02</div>
+                    <div class="section-4-inner-card-head">We Visit You At Home</div>
+                    <a href="interiordesign.html" class="section-4-inner-card-link">READ MORE <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="section-4-inner-card">
+                    <div class="section-4-inner-card-number">03</div>
+                    <div class="section-4-inner-card-head">We Visit You At Home</div>
+                    <a href="interiordesign.html" class="section-4-inner-card-link">READ MORE <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="col-6 section-two-card text-center">
-                <div class="col-12">
-                    <div class="section-two-about-us">ABOUT US</div>
-                    <div class="section-two-card-2-head">Creative solutions by professional designers</div>
-                    <div class="section-2-card-about-us-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quasi labore saepe rem, omnis, commodi mollitia impedit dolor velit molestias soluta aliquam consequuntur.</div>
-                    <div class="section-2-content-button"><a href="aboutus.html" class="button">CONTINUE READING <i class="fa fa-arrow-right"></i></a></div>                    
-                </div>
-                <div class="col-12 section-two-card-main-image"><img src="" alt="designer"></div>
-            </div>
         </div>
-        <div class="col-6 mx-auto">
-            <div class="row">
-                <div class="col-3"><div class="number-bold">25+</div><div class="number-tag">Interior Design</div></div>
-                <div class="col-3"><div class="number-bold">93+</div><div class="number-tag">Architecture</div></div>
-                <div class="col-3"><div class="number-bold">48+</div><div class="number-tag">Construction</div></div>
-                <div class="col-3"><div class="number-bold">68+</div><div class="number-tag">Project Design</div></div>
-            </div>
-        </div>
-        <div class="section-two-video text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/RnD8i47Ldig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
     </div>
-    <div class="container-fluid section-three">
-        <div class="row">
-            <div class="col-5"></div>
-            <div class="col-7">
-                <div class="row">
-                    <div class="col-6"></div>
-                </div>
-            </div>
+    <div class="section-5">
+        <div class="section-5-subhead">OUR PROJECTS</div>
+        <div class="section-5-head">Explore our Kitchen Designs</div>
+        <div class="section-5-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, cupiditate?</div>
+        <div class="section-5-content">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="section-5-button"><a href="projects.html">ALL PROJECTS <i class="fa-arrow-right"></i></a></div>
+    </div>
+    <div class="section-6">
+        <div class="section-6-image">
+            <img src="" alt="">
+        </div>
+        <div class="section-6-content">
+            <div class="section-6-subhead">QUALITY</div>
+            <div class="section-6-head">Exceptional quality. Transparent pricing</div>
+            <div class="section-6-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi, corrupti ullam dolor quisquam possimus?</div>
+            <div class="section-6-button"><button>GET AND INSTANT ESTIMATE <i class="fa-arrow-right"></i></button></div>
+        </div>
+        <div class="section-6-logos">
+            
         </div>
     </div>
 </body>

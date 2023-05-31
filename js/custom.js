@@ -1,16 +1,15 @@
-$('.slider').owlCarousel({
+$(document).ready(function(){
+  $("#homeslider .owl-carousel").owlCarousel({
+    autoplay:true,
+    autoplayTimeout:3000,
+    dots:true,
     loop:true,
     margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
+    items:1
+  });
+  
+  $(".search-form").hide();
+  $("#search-icon").click(function(){
+    $(".search-form").slideToggle();
+  });
 });
