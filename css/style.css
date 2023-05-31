@@ -456,6 +456,11 @@ header{
     margin: 2% auto;
 }
 
+.section-4-image img{
+    width:16vw;
+}
+
+
 .section-4-inner-content{
     position: absolute;
     bottom: 0;
